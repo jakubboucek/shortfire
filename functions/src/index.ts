@@ -26,7 +26,7 @@ app.get("*", (request, response) => {
 
 // Handle the rest
 app.all("*", ((req, res) => {
-  res.status(500);
+  res.status(500).end();
 }));
 
 export const redirect = functions.https.onRequest(app);
