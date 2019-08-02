@@ -3,6 +3,7 @@
 
 functions/node_modules
 functions/lib
+functions/serviceAccount.json
 
 firebase-debug.log
 

@@ -8,7 +8,10 @@ import Api from "./api/Api";
 import * as cookieParser from "cookie-parser";
 
 // Initialize Firebase App
-admin.initializeApp(functions.config().firebase);
+const serviceAccount = require('../serviceAccount.json');
+const adminConfig = JSON.parse(process.env.FIREBASE_CONFIG);
+adminConfig.credential = admin.credential.cert(serviceAccount);
+admin.initializeApp(adminConfig);
 
 // Routing
 const app = express();
