@@ -2,7 +2,7 @@
 
 function updateAuthorizedState(user) {
   if (user != null) {
-    console.log('user signed in - ' + user.name);
+    console.log(`user signed in - ${user.name} (${user.uid})`);
 
     checkAdminState(user.uid)
       .then(function () {
