@@ -1,6 +1,9 @@
 {
   "name": "functions",
   "description": "TypeScript sample Cloud Functions for Firebase",
+  "engines": {
+      "node": "10"
+  },
   "dependencies": {
     "body-parser": "^1.19.0",
     "cookie-parser": "^1.4.4",
